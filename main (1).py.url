@@ -1,2 +1,26 @@
-[InternetShortcut]
-URL=https://github.com/mtu522ucs35/Divya/commit/3859c48c9d47c70748488dc2401d2711d2f0dcfb#diff-e7f12b8b6f84276bea2d4f513b52039319db964c6534fc81f0cd47b0d505aa6d
+
+#Write a program that determines whether a year entered by the user is a leap year or not using if-elif-else statements.
+"""
+year%4==0&
+year%100!=0/
+year%400==0
+"""
+def isLeapYear(year):
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        return True
+    else:
+        return False
+year = int(input("Enter a year: "))
+
+if isLeapYear(year):  # Call the function and pass the 'year' variable
+    print('{} is a leap year.'.format(year))
+else:
+    print('{} is not a leap year.'.format(year)) # Implement a recursive function to calculate the factorial of a given number.
+def fact_rec(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact_rec(n - 1)
+number = int(input(" Enter a value:"))
+res = fact_rec(number)
+print("The factorial of {} is {}".format(number, res))
