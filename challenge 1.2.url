@@ -1,2 +1,11 @@
-[InternetShortcut]
-URL=https://github.com/mtu522ucs35/Divya/commit/3859c48c9d47c70748488dc2401d2711d2f0dcfb#diff-fd55a61e299adf06fec517a2482dcd04b2cf65a42a26de5731410a4ae2a96742
+# Implement a recursive function to calculate the factorial of a given number.
+def fact_rec(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact_rec(n - 1)
+
+
+number = int(input(" Enter a value:"))
+res = fact_rec(number)
+print("The factorial of {} is {}".format(number, res))
